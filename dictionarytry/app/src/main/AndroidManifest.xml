@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.dictionarytry">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/wordweiss7"
+        android:label="Wordweiss"
+        android:roundIcon="@mipmap/wordweiss7"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+
+        </activity>
+
+        <service android:name=".CopyService" />
+
+        <activity android:name=".homepage" android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".favoriteActivity" />
+        <activity android:name=".Wotd" android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity android:name=".Helper" android:windowSoftInputMode="stateVisible|adjustPan"/>
+        <activity android:name=".History" ></activity>
+    </application>
+
+</manifest>
